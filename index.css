@@ -1,0 +1,41 @@
+#hiddentextarea {
+  position: absolute;
+  top: -1000px;
+}
+#renderplaceholder {
+  background-color: grey;
+}
+#editor {
+  height: 375px;
+}
+#overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+#popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 500px;
+  height: 300px;
+  margin-left: -230px; /*Half the value of width to center div*/
+  margin-top: -180px; /*Half the value of height to center div*/
+  z-index: 200;
+}
+#popupclose {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+.popupcontent {
+  padding: 10px;
+}
