@@ -3,11 +3,12 @@
   top: -1000px;
 }
 #renderplaceholder {
-  background-color: grey;
+  border: solid;
 }
 #editor {
   height: 375px;
 }
+/*
 #overlay {
   display: none;
   position: absolute;
@@ -18,10 +19,11 @@
   height: 100%;
   opacity: 0.8;
   z-index: 100;
-}
+} */
 #popup {
   display: none;
   position: absolute;
+  border: solid;
   top: 50%;
   left: 50%;
   background: #fff;

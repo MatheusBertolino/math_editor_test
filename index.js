@@ -2,12 +2,20 @@
 var closePopup = document.getElementById("popupclose");
 var overlay = document.getElementById("overlay");
 var popup = document.getElementById("popup");
+
+
 // Close Popup Event
 closePopup.onclick = function() {
-  overlay.style.display = 'none';
+//  overlay.style.display = 'none';
   popup.style.display = 'none';
 };
-
+/*
+window.onclick = function(event) {
+    if (event.target != popup) {
+        popup.style.display = "none";
+    }
+}
+*/
 var toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike','formula'],        // toggled buttons
 ];
@@ -22,14 +30,8 @@ var quill = new Quill(container, {
 
 var toolbar = quill.getModule('toolbar');
 
-/* INSERT FORMULA */
+/* INSERT FORMULA BUTTON */
 toolbar.addHandler('formula', function() {
-    overlay.style.display = 'block';
+//    overlay.style.display = 'block';
     popup.style.display = 'block';
-
-    /*
-    var eq = prompt("digite a formula :");
-    var selection = quill.getSelection(true);
-    quill.insertEmbed(selection.index, 'formula', eq);
-    */
 });
