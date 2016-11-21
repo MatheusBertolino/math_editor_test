@@ -1,4 +1,4 @@
-window.onload = function (){
+function customizeAndLoadQuillEditor(){
     // Formulas Popup
     var closePopup = document.getElementById("popupclose");
     var popup = document.getElementById("popup");
