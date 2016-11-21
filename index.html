@@ -12,6 +12,9 @@
         <!-- Include the Quill library -->
         <link href="quill/quill.snow.css" rel="stylesheet">
         <script src="quill/quill.js"></script>
+
+        <script src="matheditor.js"></script>
+        <script src="index.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -27,14 +30,10 @@
             </div>
             <div class="popupcontent">
                 <h1>Editor de Formulas</h1>
-                <button onclick="textareaWriter(this)">\sum </button> 
-                <button>\int</button>
+                <button onclick="textareaWriter(this)">\sum </button>
+                <button onclick="textareaWriter(this)">\int </button>
             </div>
         </div>
-
-        <script src="matheditor.js"></script>
-
-        <script src="index.js" type="text/javascript"></script>
     </body>
 
 </html>

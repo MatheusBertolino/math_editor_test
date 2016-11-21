@@ -1,5 +1,7 @@
-var hiddentextarea = document.getElementById('hiddentextarea');
-var renderplaceholder = document.getElementById('renderplaceholder');
+window.onload = function (){
+	var hiddentextarea = document.getElementById('hiddentextarea');
+	var renderplaceholder = document.getElementById('renderplaceholder');
+}
 
 function renderize(element) {
 	katex.render(element.value, renderplaceholder);
