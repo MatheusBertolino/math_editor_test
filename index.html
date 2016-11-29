@@ -20,7 +20,9 @@
         <!-- Create the editor container -->        
         <div id="editor"></div>
         <textarea id="hiddentextarea" onkeyup="renderize(this)" onchange="renderize(this)"></textarea>
-        <div id="renderplaceholder" onclick="changeFocus()"></div>
+        <div id="renderplaceholder" onclick="changeFocus()">
+            <span id='cursor'>|</span>
+        </div>
 
         <!-- Create the popup -->
         <div id="popup">
