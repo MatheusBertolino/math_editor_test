@@ -16,7 +16,7 @@ window.onload = function (){
 		clearInterval(refreshIntervalId);
 	};
 }
-	
+
 function blinkCursor(){
 	if (cursor.style.display == 'none'){
 		cursor.style.display = 'inline';}
